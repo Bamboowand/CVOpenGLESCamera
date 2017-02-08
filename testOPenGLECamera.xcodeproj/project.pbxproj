@@ -422,7 +422,7 @@
 				INFOPLIST_FILE = testOPenGLECamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = arplanet.testOPenGLECamera;
+				PRODUCT_BUNDLE_IDENTIFIER = wayde.testOPenGLECamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a075e53e-634d-4cd8-8876-00849ae2f854";
 				PROVISIONING_PROFILE_SPECIFIER = ar_ios_wildcard2;
@@ -442,7 +442,7 @@
 				INFOPLIST_FILE = testOPenGLECamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = arplanet.testOPenGLECamera;
+				PRODUCT_BUNDLE_IDENTIFIER = wayde.testOPenGLECamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a075e53e-634d-4cd8-8876-00849ae2f854";
 				PROVISIONING_PROFILE_SPECIFIER = ar_ios_wildcard2;
