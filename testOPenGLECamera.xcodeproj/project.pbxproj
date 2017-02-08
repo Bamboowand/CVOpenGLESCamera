@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8491D8581E2602B70072B801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491D8571E2602B70072B801 /* main.m */; };
+		8491D85B1E2602B70072B801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491D85A1E2602B70072B801 /* AppDelegate.m */; };
+		8491D8611E2602B70072B801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8491D85F1E2602B70072B801 /* Main.storyboard */; };
+		8491D8641E2602B70072B801 /* testOPenGLECamera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8491D8621E2602B70072B801 /* testOPenGLECamera.xcdatamodeld */; };
+		8491D8661E2602B70072B801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8491D8651E2602B70072B801 /* Assets.xcassets */; };
+		8491D8691E2602B70072B801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8491D8671E2602B70072B801 /* LaunchScreen.storyboard */; };
+		8491D8721E2603000072B801 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D8711E2603000072B801 /* Accelerate.framework */; };
+		8491D8741E26030B0072B801 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D8731E26030B0072B801 /* AssetsLibrary.framework */; };
+		8491D8771E2603140072B801 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D8751E2603140072B801 /* AVFoundation.framework */; };
+		8491D8781E2603140072B801 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D8761E2603140072B801 /* AVKit.framework */; };
+		8491D87D1E2603310072B801 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D8791E2603310072B801 /* CoreGraphics.framework */; };
+		8491D87E1E2603310072B801 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D87A1E2603310072B801 /* CoreImage.framework */; };
+		8491D87F1E2603310072B801 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D87B1E2603310072B801 /* CoreMedia.framework */; };
+		8491D8801E2603310072B801 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D87C1E2603310072B801 /* CoreVideo.framework */; };
+		8491D8821E26033D0072B801 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D8811E26033D0072B801 /* UIKit.framework */; };
+		8491D8841E2603470072B801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D8831E2603470072B801 /* Foundation.framework */; };
+		8491D8861E26034D0072B801 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D8851E26034D0072B801 /* QuartzCore.framework */; };
+		8491D8881E2603540072B801 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D8871E2603530072B801 /* OpenGLES.framework */; };
+		8491D88A1E2603AA0072B801 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8491D8891E2603AA0072B801 /* opencv2.framework */; };
+		8491D8951E2603F10072B801 /* GLSLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491D88D1E2603F10072B801 /* GLSLProgram.m */; };
+		8491D8961E2603F10072B801 /* OGLARModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491D88F1E2603F10072B801 /* OGLARModel.m */; };
+		8491D8971E2603F10072B801 /* OGLMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491D8911E2603F10072B801 /* OGLMesh.m */; };
+		8491D8981E2603F10072B801 /* OGLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491D8941E2603F10072B801 /* OGLModel.m */; };
+		8491D89B1E2604200072B801 /* ARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8491D89A1E2604200072B801 /* ARViewController.mm */; };
+		8491D8A61E2607740072B801 /* ColorPacking.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8491D89D1E2607740072B801 /* ColorPacking.fsh */; };
+		8491D8A71E2607740072B801 /* ColorPacking.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8491D89E1E2607740072B801 /* ColorPacking.vsh */; };
+		8491D8A81E2607740072B801 /* fragmentGray.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8491D89F1E2607740072B801 /* fragmentGray.fsh */; };
+		8491D8A91E2607740072B801 /* fragmentHARRIS.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8491D8A01E2607740072B801 /* fragmentHARRIS.fsh */; };
+		8491D8AA1E2607740072B801 /* fragmentXYDerivativeFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8491D8A11E2607740072B801 /* fragmentXYDerivativeFilter.fsh */; };
+		8491D8AB1E2607740072B801 /* ThresholdedNonMaximumSuppression.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8491D8A21E2607740072B801 /* ThresholdedNonMaximumSuppression.fsh */; };
+		8491D8AC1E2607740072B801 /* ThresholdedNonMaximumSuppressionPackedColorspace.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8491D8A31E2607740072B801 /* ThresholdedNonMaximumSuppressionPackedColorspace.fsh */; };
+		8491D8AD1E2607740072B801 /* vertexHARRIS.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8491D8A41E2607740072B801 /* vertexHARRIS.vsh */; };
+		8491D8AE1E2607740072B801 /* vertexNearbyTexelSampling.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8491D8A51E2607740072B801 /* vertexNearbyTexelSampling.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8491D8531E2602B70072B801 /* testOPenGLECamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testOPenGLECamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8491D8571E2602B70072B801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8491D8591E2602B70072B801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8491D85A1E2602B70072B801 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8491D8601E2602B70072B801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8491D8631E2602B70072B801 /* testOPenGLECamera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testOPenGLECamera.xcdatamodel; sourceTree = "<group>"; };
+		8491D8651E2602B70072B801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8491D8681E2602B70072B801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8491D86A1E2602B70072B801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8491D8711E2603000072B801 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		8491D8731E26030B0072B801 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		8491D8751E2603140072B801 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8491D8761E2603140072B801 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		8491D8791E2603310072B801 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8491D87A1E2603310072B801 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		8491D87B1E2603310072B801 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8491D87C1E2603310072B801 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8491D8811E26033D0072B801 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8491D8831E2603470072B801 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8491D8851E26034D0072B801 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8491D8871E2603530072B801 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8491D8891E2603AA0072B801 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		8491D88C1E2603F10072B801 /* GLSLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSLProgram.h; sourceTree = "<group>"; };
+		8491D88D1E2603F10072B801 /* GLSLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSLProgram.m; sourceTree = "<group>"; };
+		8491D88E1E2603F10072B801 /* OGLARModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLARModel.h; sourceTree = "<group>"; };
+		8491D88F1E2603F10072B801 /* OGLARModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLARModel.m; sourceTree = "<group>"; };
+		8491D8901E2603F10072B801 /* OGLMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLMesh.h; sourceTree = "<group>"; };
+		8491D8911E2603F10072B801 /* OGLMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLMesh.m; sourceTree = "<group>"; };
+		8491D8921E2603F10072B801 /* OGLMeshData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLMeshData.h; sourceTree = "<group>"; };
+		8491D8931E2603F10072B801 /* OGLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLModel.h; sourceTree = "<group>"; };
+		8491D8941E2603F10072B801 /* OGLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLModel.m; sourceTree = "<group>"; };
+		8491D8991E2604200072B801 /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		8491D89A1E2604200072B801 /* ARViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARViewController.mm; sourceTree = "<group>"; };
+		8491D89D1E2607740072B801 /* ColorPacking.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorPacking.fsh; sourceTree = "<group>"; };
+		8491D89E1E2607740072B801 /* ColorPacking.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorPacking.vsh; sourceTree = "<group>"; };
+		8491D89F1E2607740072B801 /* fragmentGray.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentGray.fsh; sourceTree = "<group>"; };
+		8491D8A01E2607740072B801 /* fragmentHARRIS.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentHARRIS.fsh; sourceTree = "<group>"; };
+		8491D8A11E2607740072B801 /* fragmentXYDerivativeFilter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentXYDerivativeFilter.fsh; sourceTree = "<group>"; };
+		8491D8A21E2607740072B801 /* ThresholdedNonMaximumSuppression.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ThresholdedNonMaximumSuppression.fsh; sourceTree = "<group>"; };
+		8491D8A31E2607740072B801 /* ThresholdedNonMaximumSuppressionPackedColorspace.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ThresholdedNonMaximumSuppressionPackedColorspace.fsh; sourceTree = "<group>"; };
+		8491D8A41E2607740072B801 /* vertexHARRIS.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertexHARRIS.vsh; sourceTree = "<group>"; };
+		8491D8A51E2607740072B801 /* vertexNearbyTexelSampling.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertexNearbyTexelSampling.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8491D8501E2602B70072B801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8491D8881E2603540072B801 /* OpenGLES.framework in Frameworks */,
+				8491D8861E26034D0072B801 /* QuartzCore.framework in Frameworks */,
+				8491D8841E2603470072B801 /* Foundation.framework in Frameworks */,
+				8491D8821E26033D0072B801 /* UIKit.framework in Frameworks */,
+				8491D87D1E2603310072B801 /* CoreGraphics.framework in Frameworks */,
+				8491D88A1E2603AA0072B801 /* opencv2.framework in Frameworks */,
+				8491D87E1E2603310072B801 /* CoreImage.framework in Frameworks */,
+				8491D87F1E2603310072B801 /* CoreMedia.framework in Frameworks */,
+				8491D8801E2603310072B801 /* CoreVideo.framework in Frameworks */,
+				8491D8771E2603140072B801 /* AVFoundation.framework in Frameworks */,
+				8491D8781E2603140072B801 /* AVKit.framework in Frameworks */,
+				8491D8741E26030B0072B801 /* AssetsLibrary.framework in Frameworks */,
+				8491D8721E2603000072B801 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8491D84A1E2602B70072B801 = {
+			isa = PBXGroup;
+			children = (
+				8491D8551E2602B70072B801 /* testOPenGLECamera */,
+				8491D8541E2602B70072B801 /* Products */,
+				8491D8701E2603000072B801 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8491D8541E2602B70072B801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8491D8531E2602B70072B801 /* testOPenGLECamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8491D8551E2602B70072B801 /* testOPenGLECamera */ = {
+			isa = PBXGroup;
+			children = (
+				8491D89C1E2607740072B801 /* shade */,
+				8491D88B1E2603F00072B801 /* OpenGL */,
+				8491D8591E2602B70072B801 /* AppDelegate.h */,
+				8491D85A1E2602B70072B801 /* AppDelegate.m */,
+				8491D8991E2604200072B801 /* ARViewController.h */,
+				8491D89A1E2604200072B801 /* ARViewController.mm */,
+				8491D85F1E2602B70072B801 /* Main.storyboard */,
+				8491D8651E2602B70072B801 /* Assets.xcassets */,
+				8491D8671E2602B70072B801 /* LaunchScreen.storyboard */,
+				8491D86A1E2602B70072B801 /* Info.plist */,
+				8491D8621E2602B70072B801 /* testOPenGLECamera.xcdatamodeld */,
+				8491D8561E2602B70072B801 /* Supporting Files */,
+			);
+			path = testOPenGLECamera;
+			sourceTree = "<group>";
+		};
+		8491D8561E2602B70072B801 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8491D8571E2602B70072B801 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8491D8701E2603000072B801 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8491D8891E2603AA0072B801 /* opencv2.framework */,
+				8491D8871E2603530072B801 /* OpenGLES.framework */,
+				8491D8851E26034D0072B801 /* QuartzCore.framework */,
+				8491D8831E2603470072B801 /* Foundation.framework */,
+				8491D8811E26033D0072B801 /* UIKit.framework */,
+				8491D8791E2603310072B801 /* CoreGraphics.framework */,
+				8491D87A1E2603310072B801 /* CoreImage.framework */,
+				8491D87B1E2603310072B801 /* CoreMedia.framework */,
+				8491D87C1E2603310072B801 /* CoreVideo.framework */,
+				8491D8751E2603140072B801 /* AVFoundation.framework */,
+				8491D8761E2603140072B801 /* AVKit.framework */,
+				8491D8731E26030B0072B801 /* AssetsLibrary.framework */,
+				8491D8711E2603000072B801 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8491D88B1E2603F00072B801 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				8491D88C1E2603F10072B801 /* GLSLProgram.h */,
+				8491D88D1E2603F10072B801 /* GLSLProgram.m */,
+				8491D88E1E2603F10072B801 /* OGLARModel.h */,
+				8491D88F1E2603F10072B801 /* OGLARModel.m */,
+				8491D8901E2603F10072B801 /* OGLMesh.h */,
+				8491D8911E2603F10072B801 /* OGLMesh.m */,
+				8491D8921E2603F10072B801 /* OGLMeshData.h */,
+				8491D8931E2603F10072B801 /* OGLModel.h */,
+				8491D8941E2603F10072B801 /* OGLModel.m */,
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		8491D89C1E2607740072B801 /* shade */ = {
+			isa = PBXGroup;
+			children = (
+				8491D89D1E2607740072B801 /* ColorPacking.fsh */,
+				8491D89E1E2607740072B801 /* ColorPacking.vsh */,
+				8491D89F1E2607740072B801 /* fragmentGray.fsh */,
+				8491D8A01E2607740072B801 /* fragmentHARRIS.fsh */,
+				8491D8A11E2607740072B801 /* fragmentXYDerivativeFilter.fsh */,
+				8491D8A21E2607740072B801 /* ThresholdedNonMaximumSuppression.fsh */,
+				8491D8A31E2607740072B801 /* ThresholdedNonMaximumSuppressionPackedColorspace.fsh */,
+				8491D8A41E2607740072B801 /* vertexHARRIS.vsh */,
+				8491D8A51E2607740072B801 /* vertexNearbyTexelSampling.vsh */,
+			);
+			path = shade;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8491D8521E2602B70072B801 /* testOPenGLECamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8491D86D1E2602B70072B801 /* Build configuration list for PBXNativeTarget "testOPenGLECamera" */;
+			buildPhases = (
+				8491D84F1E2602B70072B801 /* Sources */,
+				8491D8501E2602B70072B801 /* Frameworks */,
+				8491D8511E2602B70072B801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testOPenGLECamera;
+			productName = testOPenGLECamera;
+			productReference = 8491D8531E2602B70072B801 /* testOPenGLECamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8491D84B1E2602B70072B801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = joe;
+				TargetAttributes = {
+					8491D8521E2602B70072B801 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = N2PW23523R;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 8491D84E1E2602B70072B801 /* Build configuration list for PBXProject "testOPenGLECamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8491D84A1E2602B70072B801;
+			productRefGroup = 8491D8541E2602B70072B801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8491D8521E2602B70072B801 /* testOPenGLECamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8491D8511E2602B70072B801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8491D8A91E2607740072B801 /* fragmentHARRIS.fsh in Resources */,
+				8491D8AD1E2607740072B801 /* vertexHARRIS.vsh in Resources */,
+				8491D8691E2602B70072B801 /* LaunchScreen.storyboard in Resources */,
+				8491D8AB1E2607740072B801 /* ThresholdedNonMaximumSuppression.fsh in Resources */,
+				8491D8661E2602B70072B801 /* Assets.xcassets in Resources */,
+				8491D8AC1E2607740072B801 /* ThresholdedNonMaximumSuppressionPackedColorspace.fsh in Resources */,
+				8491D8AA1E2607740072B801 /* fragmentXYDerivativeFilter.fsh in Resources */,
+				8491D8A71E2607740072B801 /* ColorPacking.vsh in Resources */,
+				8491D8AE1E2607740072B801 /* vertexNearbyTexelSampling.vsh in Resources */,
+				8491D8611E2602B70072B801 /* Main.storyboard in Resources */,
+				8491D8A81E2607740072B801 /* fragmentGray.fsh in Resources */,
+				8491D8A61E2607740072B801 /* ColorPacking.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8491D84F1E2602B70072B801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8491D8981E2603F10072B801 /* OGLModel.m in Sources */,
+				8491D8961E2603F10072B801 /* OGLARModel.m in Sources */,
+				8491D8641E2602B70072B801 /* testOPenGLECamera.xcdatamodeld in Sources */,
+				8491D89B1E2604200072B801 /* ARViewController.mm in Sources */,
+				8491D8971E2603F10072B801 /* OGLMesh.m in Sources */,
+				8491D85B1E2602B70072B801 /* AppDelegate.m in Sources */,
+				8491D8581E2602B70072B801 /* main.m in Sources */,
+				8491D8951E2603F10072B801 /* GLSLProgram.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8491D85F1E2602B70072B801 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8491D8601E2602B70072B801 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8491D8671E2602B70072B801 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8491D8681E2602B70072B801 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8491D86B1E2602B70072B801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8491D86C1E2602B70072B801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8491D86E1E2602B70072B801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N2PW23523R;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = testOPenGLECamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arplanet.testOPenGLECamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a075e53e-634d-4cd8-8876-00849ae2f854";
+				PROVISIONING_PROFILE_SPECIFIER = ar_ios_wildcard2;
+			};
+			name = Debug;
+		};
+		8491D86F1E2602B70072B801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N2PW23523R;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = testOPenGLECamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arplanet.testOPenGLECamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a075e53e-634d-4cd8-8876-00849ae2f854";
+				PROVISIONING_PROFILE_SPECIFIER = ar_ios_wildcard2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8491D84E1E2602B70072B801 /* Build configuration list for PBXProject "testOPenGLECamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8491D86B1E2602B70072B801 /* Debug */,
+				8491D86C1E2602B70072B801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8491D86D1E2602B70072B801 /* Build configuration list for PBXNativeTarget "testOPenGLECamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8491D86E1E2602B70072B801 /* Debug */,
+				8491D86F1E2602B70072B801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8491D8621E2602B70072B801 /* testOPenGLECamera.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8491D8631E2602B70072B801 /* testOPenGLECamera.xcdatamodel */,
+			);
+			currentVersion = 8491D8631E2602B70072B801 /* testOPenGLECamera.xcdatamodel */;
+			path = testOPenGLECamera.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8491D84B1E2602B70072B801 /* Project object */;
+}
