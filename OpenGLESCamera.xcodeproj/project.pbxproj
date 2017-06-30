@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8487C6BF1E6E915F0054B442 /* GLSLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 8487C6BE1E6E915F0054B442 /* GLSLProgram.m */; };
+		8487C6C21E6E91B70054B442 /* fragmentGray.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8487C6C01E6E91B70054B442 /* fragmentGray.fsh */; };
+		8487C6C31E6E91B70054B442 /* vertexHARRIS.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8487C6C11E6E91B70054B442 /* vertexHARRIS.vsh */; };
+		8487C6C61E6E98610054B442 /* ThresholdedNonMaximumSuppression.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8487C6C41E6E98610054B442 /* ThresholdedNonMaximumSuppression.fsh */; };
+		8487C6C71E6E98610054B442 /* vertexNearbyTexelSampling.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8487C6C51E6E98610054B442 /* vertexNearbyTexelSampling.vsh */; };
+		84BB9F611E6D479D00761DF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB9F601E6D479D00761DF6 /* main.m */; };
+		84BB9F641E6D479D00761DF6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84BB9F631E6D479D00761DF6 /* AppDelegate.mm */; };
+		84BB9F671E6D479D00761DF6 /* ARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84BB9F661E6D479D00761DF6 /* ARViewController.mm */; };
+		84BB9F6A1E6D479D00761DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB9F681E6D479D00761DF6 /* Main.storyboard */; };
+		84BB9F6D1E6D479D00761DF6 /* OpenGLESCamera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84BB9F6B1E6D479D00761DF6 /* OpenGLESCamera.xcdatamodeld */; };
+		84BB9F6F1E6D479D00761DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BB9F6E1E6D479D00761DF6 /* Assets.xcassets */; };
+		84BB9F721E6D479D00761DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB9F701E6D479D00761DF6 /* LaunchScreen.storyboard */; };
+		84BB9F7B1E6D482A00761DF6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F7A1E6D482A00761DF6 /* OpenGLES.framework */; };
+		84BB9F801E6D485A00761DF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F7C1E6D485A00761DF6 /* CoreGraphics.framework */; };
+		84BB9F811E6D485A00761DF6 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F7D1E6D485A00761DF6 /* CoreImage.framework */; };
+		84BB9F821E6D485A00761DF6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F7E1E6D485A00761DF6 /* CoreMedia.framework */; };
+		84BB9F831E6D485A00761DF6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F7F1E6D485A00761DF6 /* CoreVideo.framework */; };
+		84BB9F851E6D486700761DF6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F841E6D486700761DF6 /* QuartzCore.framework */; };
+		84BB9F871E6D486E00761DF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F861E6D486E00761DF6 /* Foundation.framework */; };
+		84BB9F891E6D487F00761DF6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F881E6D487F00761DF6 /* AVFoundation.framework */; };
+		84BB9F8B1E6D488B00761DF6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F8A1E6D488B00761DF6 /* AssetsLibrary.framework */; };
+		84BB9F8D1E6D48C800761DF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F8C1E6D48C800761DF6 /* UIKit.framework */; };
+		84BB9F8F1E6D48F000761DF6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F8E1E6D48F000761DF6 /* Accelerate.framework */; };
+		84BB9F911E6D49E400761DF6 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F901E6D49E400761DF6 /* opencv2.framework */; };
+		84BB9F931E6D4E8400761DF6 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F921E6D4E8400761DF6 /* AVKit.framework */; };
+		84BB9F951E6D51F400761DF6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BB9F941E6D51F400761DF6 /* GLKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8487C6BD1E6E915F0054B442 /* GLSLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSLProgram.h; sourceTree = "<group>"; };
+		8487C6BE1E6E915F0054B442 /* GLSLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSLProgram.m; sourceTree = "<group>"; };
+		8487C6C01E6E91B70054B442 /* fragmentGray.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentGray.fsh; sourceTree = "<group>"; };
+		8487C6C11E6E91B70054B442 /* vertexHARRIS.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertexHARRIS.vsh; sourceTree = "<group>"; };
+		8487C6C41E6E98610054B442 /* ThresholdedNonMaximumSuppression.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ThresholdedNonMaximumSuppression.fsh; sourceTree = "<group>"; };
+		8487C6C51E6E98610054B442 /* vertexNearbyTexelSampling.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertexNearbyTexelSampling.vsh; sourceTree = "<group>"; };
+		84BB9F5C1E6D479D00761DF6 /* OpenGLESCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLESCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BB9F601E6D479D00761DF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84BB9F621E6D479D00761DF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84BB9F631E6D479D00761DF6 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		84BB9F651E6D479D00761DF6 /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		84BB9F661E6D479D00761DF6 /* ARViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ARViewController.mm; sourceTree = "<group>"; };
+		84BB9F691E6D479D00761DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84BB9F6C1E6D479D00761DF6 /* OpenGLESCamera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenGLESCamera.xcdatamodel; sourceTree = "<group>"; };
+		84BB9F6E1E6D479D00761DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84BB9F711E6D479D00761DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84BB9F731E6D479D00761DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BB9F7A1E6D482A00761DF6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		84BB9F7C1E6D485A00761DF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84BB9F7D1E6D485A00761DF6 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		84BB9F7E1E6D485A00761DF6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		84BB9F7F1E6D485A00761DF6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		84BB9F841E6D486700761DF6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		84BB9F861E6D486E00761DF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84BB9F881E6D487F00761DF6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		84BB9F8A1E6D488B00761DF6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		84BB9F8C1E6D48C800761DF6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84BB9F8E1E6D48F000761DF6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		84BB9F901E6D49E400761DF6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		84BB9F921E6D4E8400761DF6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		84BB9F941E6D51F400761DF6 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BB9F591E6D479D00761DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BB9F951E6D51F400761DF6 /* GLKit.framework in Frameworks */,
+				84BB9F931E6D4E8400761DF6 /* AVKit.framework in Frameworks */,
+				84BB9F8F1E6D48F000761DF6 /* Accelerate.framework in Frameworks */,
+				84BB9F8D1E6D48C800761DF6 /* UIKit.framework in Frameworks */,
+				84BB9F8B1E6D488B00761DF6 /* AssetsLibrary.framework in Frameworks */,
+				84BB9F891E6D487F00761DF6 /* AVFoundation.framework in Frameworks */,
+				84BB9F871E6D486E00761DF6 /* Foundation.framework in Frameworks */,
+				84BB9F851E6D486700761DF6 /* QuartzCore.framework in Frameworks */,
+				84BB9F911E6D49E400761DF6 /* opencv2.framework in Frameworks */,
+				84BB9F801E6D485A00761DF6 /* CoreGraphics.framework in Frameworks */,
+				84BB9F811E6D485A00761DF6 /* CoreImage.framework in Frameworks */,
+				84BB9F821E6D485A00761DF6 /* CoreMedia.framework in Frameworks */,
+				84BB9F831E6D485A00761DF6 /* CoreVideo.framework in Frameworks */,
+				84BB9F7B1E6D482A00761DF6 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84BB9F531E6D479C00761DF6 = {
+			isa = PBXGroup;
+			children = (
+				8487C6C01E6E91B70054B442 /* fragmentGray.fsh */,
+				8487C6C11E6E91B70054B442 /* vertexHARRIS.vsh */,
+				8487C6C41E6E98610054B442 /* ThresholdedNonMaximumSuppression.fsh */,
+				8487C6C51E6E98610054B442 /* vertexNearbyTexelSampling.vsh */,
+				84BB9F5E1E6D479D00761DF6 /* OpenGLESCamera */,
+				84BB9F5D1E6D479D00761DF6 /* Products */,
+				84BB9F791E6D482900761DF6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84BB9F5D1E6D479D00761DF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BB9F5C1E6D479D00761DF6 /* OpenGLESCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BB9F5E1E6D479D00761DF6 /* OpenGLESCamera */ = {
+			isa = PBXGroup;
+			children = (
+				8487C6BD1E6E915F0054B442 /* GLSLProgram.h */,
+				8487C6BE1E6E915F0054B442 /* GLSLProgram.m */,
+				84BB9F621E6D479D00761DF6 /* AppDelegate.h */,
+				84BB9F631E6D479D00761DF6 /* AppDelegate.mm */,
+				84BB9F651E6D479D00761DF6 /* ARViewController.h */,
+				84BB9F661E6D479D00761DF6 /* ARViewController.mm */,
+				84BB9F681E6D479D00761DF6 /* Main.storyboard */,
+				84BB9F6E1E6D479D00761DF6 /* Assets.xcassets */,
+				84BB9F701E6D479D00761DF6 /* LaunchScreen.storyboard */,
+				84BB9F731E6D479D00761DF6 /* Info.plist */,
+				84BB9F6B1E6D479D00761DF6 /* OpenGLESCamera.xcdatamodeld */,
+				84BB9F5F1E6D479D00761DF6 /* Supporting Files */,
+			);
+			path = OpenGLESCamera;
+			sourceTree = "<group>";
+		};
+		84BB9F5F1E6D479D00761DF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84BB9F601E6D479D00761DF6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84BB9F791E6D482900761DF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84BB9F941E6D51F400761DF6 /* GLKit.framework */,
+				84BB9F921E6D4E8400761DF6 /* AVKit.framework */,
+				84BB9F901E6D49E400761DF6 /* opencv2.framework */,
+				84BB9F8E1E6D48F000761DF6 /* Accelerate.framework */,
+				84BB9F8C1E6D48C800761DF6 /* UIKit.framework */,
+				84BB9F8A1E6D488B00761DF6 /* AssetsLibrary.framework */,
+				84BB9F881E6D487F00761DF6 /* AVFoundation.framework */,
+				84BB9F861E6D486E00761DF6 /* Foundation.framework */,
+				84BB9F841E6D486700761DF6 /* QuartzCore.framework */,
+				84BB9F7C1E6D485A00761DF6 /* CoreGraphics.framework */,
+				84BB9F7D1E6D485A00761DF6 /* CoreImage.framework */,
+				84BB9F7E1E6D485A00761DF6 /* CoreMedia.framework */,
+				84BB9F7F1E6D485A00761DF6 /* CoreVideo.framework */,
+				84BB9F7A1E6D482A00761DF6 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BB9F5B1E6D479D00761DF6 /* OpenGLESCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BB9F761E6D479D00761DF6 /* Build configuration list for PBXNativeTarget "OpenGLESCamera" */;
+			buildPhases = (
+				84BB9F581E6D479D00761DF6 /* Sources */,
+				84BB9F591E6D479D00761DF6 /* Frameworks */,
+				84BB9F5A1E6D479D00761DF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLESCamera;
+			productName = OpenGLESCamera;
+			productReference = 84BB9F5C1E6D479D00761DF6 /* OpenGLESCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BB9F541E6D479C00761DF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = joe;
+				TargetAttributes = {
+					84BB9F5B1E6D479D00761DF6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N2PW23523R;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 84BB9F571E6D479C00761DF6 /* Build configuration list for PBXProject "OpenGLESCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84BB9F531E6D479C00761DF6;
+			productRefGroup = 84BB9F5D1E6D479D00761DF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BB9F5B1E6D479D00761DF6 /* OpenGLESCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84BB9F5A1E6D479D00761DF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8487C6C31E6E91B70054B442 /* vertexHARRIS.vsh in Resources */,
+				84BB9F721E6D479D00761DF6 /* LaunchScreen.storyboard in Resources */,
+				84BB9F6F1E6D479D00761DF6 /* Assets.xcassets in Resources */,
+				8487C6C71E6E98610054B442 /* vertexNearbyTexelSampling.vsh in Resources */,
+				8487C6C21E6E91B70054B442 /* fragmentGray.fsh in Resources */,
+				84BB9F6A1E6D479D00761DF6 /* Main.storyboard in Resources */,
+				8487C6C61E6E98610054B442 /* ThresholdedNonMaximumSuppression.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BB9F581E6D479D00761DF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BB9F671E6D479D00761DF6 /* ARViewController.mm in Sources */,
+				84BB9F6D1E6D479D00761DF6 /* OpenGLESCamera.xcdatamodeld in Sources */,
+				84BB9F641E6D479D00761DF6 /* AppDelegate.mm in Sources */,
+				84BB9F611E6D479D00761DF6 /* main.m in Sources */,
+				8487C6BF1E6E915F0054B442 /* GLSLProgram.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84BB9F681E6D479D00761DF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BB9F691E6D479D00761DF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84BB9F701E6D479D00761DF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BB9F711E6D479D00761DF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84BB9F741E6D479D00761DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84BB9F751E6D479D00761DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84BB9F771E6D479D00761DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N2PW23523R;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OpenGLESCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arplanet.OpenGLESCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39f07070-f199-4f49-a76c-b0ad142fd932";
+				PROVISIONING_PROFILE_SPECIFIER = ar_ios_wildcard2;
+			};
+			name = Debug;
+		};
+		84BB9F781E6D479D00761DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N2PW23523R;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = OpenGLESCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arplanet.OpenGLESCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39f07070-f199-4f49-a76c-b0ad142fd932";
+				PROVISIONING_PROFILE_SPECIFIER = ar_ios_wildcard2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BB9F571E6D479C00761DF6 /* Build configuration list for PBXProject "OpenGLESCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BB9F741E6D479D00761DF6 /* Debug */,
+				84BB9F751E6D479D00761DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BB9F761E6D479D00761DF6 /* Build configuration list for PBXNativeTarget "OpenGLESCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BB9F771E6D479D00761DF6 /* Debug */,
+				84BB9F781E6D479D00761DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84BB9F6B1E6D479D00761DF6 /* OpenGLESCamera.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84BB9F6C1E6D479D00761DF6 /* OpenGLESCamera.xcdatamodel */,
+			);
+			currentVersion = 84BB9F6C1E6D479D00761DF6 /* OpenGLESCamera.xcdatamodel */;
+			path = OpenGLESCamera.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84BB9F541E6D479C00761DF6 /* Project object */;
+}
